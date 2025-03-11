@@ -1,0 +1,19 @@
+name: mahmoud anwar
+
+family:
+  father: ahmed
+  mother: sarrah
+  children: 
+    son: yasser
+    daughter: menna
+
+family:
+  father: ahmed
+  mother: sarrah
+  children: 
+    sons: 
+      - yasser
+      - yousef
+    daughters: 
+      - menna
+      - manar
