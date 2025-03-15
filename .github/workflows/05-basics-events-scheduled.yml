@@ -1,7 +1,9 @@
 name: 05 Basics Events Scheduled
 
 on: 
-  
+  schedule:
+    - cron: "*/5 * * * *"
+
 jobs:
   print-hello-world:
     runs-on: ubuntu-latest
