@@ -1,0 +1,10 @@
+name: 03 Basics Events Filters
+
+on: [push, pull_request]
+
+jobs:
+  print-hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello World
+        run: echo "Hello World"
