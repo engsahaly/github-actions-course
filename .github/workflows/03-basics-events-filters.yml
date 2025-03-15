@@ -7,8 +7,12 @@ on:
     #   - closed
     #   - reopened
   push:
-    branches: 
+    # branches:
+    #   - master
+    #   - main
+    branches-ignore:
       - master
+      - main
 
 jobs:
   print-hello-world:
