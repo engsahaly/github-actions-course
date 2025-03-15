@@ -1,5 +1,5 @@
 name: 06 Basics Context
-run-name: Mahmoud Anwar Explaining context data
+run-name: ${{ github.actor }} Explaining context data
 
 on: 
   workflow_dispatch
