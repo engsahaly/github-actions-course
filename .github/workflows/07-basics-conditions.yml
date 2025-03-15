@@ -10,5 +10,5 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.event.pull_request.merged == true }}
     steps:
-      - name: Print Hello Worlds
-        run: echo ${{ toJson(github) }}
+      - name: Print Hello World
+        run: echo "Hello World"
