@@ -22,8 +22,6 @@ on:
     # paths-ignore:
     #   - 'routes/web.php'
 
-    * / **
-
 jobs:
   print-hello-world:
     runs-on: ubuntu-latest
