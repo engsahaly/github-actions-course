@@ -11,4 +11,5 @@ jobs:
         # run: echo ${{ github }}
         # run: echo ${{ github.actor }}
         # run: echo ${{ github.event_name }}
-        run: echo ${{ job.status }}
+        # run: echo ${{ job.status }}
+        run: echo ${{ toJson(github) }}
