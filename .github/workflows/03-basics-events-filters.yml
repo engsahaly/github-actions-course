@@ -18,7 +18,11 @@ on:
     # tags-ignore:
     #   - v2
     paths:
-      - 'routes/web.php'
+      - 'routes/*.php'
+    # paths-ignore:
+    #   - 'routes/web.php'
+
+    * / **
 
 jobs:
   print-hello-world:
