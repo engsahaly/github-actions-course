@@ -10,6 +10,7 @@ jobs:
       - name: Print Context Data
         # run: echo ${{ github }}
         # run: echo ${{ github.actor }}
+        # run: echo ${{ github['actor'] }}
         # run: echo ${{ github.event_name }}
         # run: echo ${{ job.status }}
         run: echo ${{ toJson(github) }}
