@@ -8,4 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print Context Data
-        run: echo ${{ github }}
+        # run: echo ${{ github }}
+        run: echo ${{ github.actor }}
