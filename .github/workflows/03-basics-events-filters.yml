@@ -10,9 +10,11 @@ on:
     # branches:
     #   - master
     #   - main
-    branches-ignore:
-      - master
-      - main
+    # branches-ignore:
+    #   - master
+    #   - main
+    tags:
+      - v2
 
 jobs:
   print-hello-world:
