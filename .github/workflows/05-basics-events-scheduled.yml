@@ -1,0 +1,10 @@
+name: 05 Basics Events Scheduled
+
+on: 
+  
+jobs:
+  print-hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello World
+        run: echo "Hello World"
