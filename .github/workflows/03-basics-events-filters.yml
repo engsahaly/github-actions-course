@@ -1,9 +1,14 @@
 name: 03 Basics Events Filters
 
 on: 
-  pull_request:
-    types:
-      - closed
+  # pull_request:
+  #   types: [closed, reopened]
+    # types:
+    #   - closed
+    #   - reopened
+  push:
+    branches: 
+      - master
 
 jobs:
   print-hello-world:
