@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print Hello Worlds
-        run: echo "Hello World"
+        run: echo ${{ toJson(github) }}
