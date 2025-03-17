@@ -27,4 +27,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print Variables 2
-        run: echo ${{ env.MY_NAME2 }}
+        run: echo ${{ vars.MY_CONFIG_VALUE }}
