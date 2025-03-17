@@ -15,6 +15,8 @@ jobs:
       MY_NAME2: 'Mahmoud Anwar 2'
     steps:
       - name: Print Variables
+        env:
+           MY_NAME3: 'Mahmoud Anwar 3'
         # run: echo $MY_NAME
         run: echo ${{ env.MY_NAME }}
       
