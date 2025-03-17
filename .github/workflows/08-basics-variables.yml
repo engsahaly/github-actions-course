@@ -1,6 +1,10 @@
 name: 06 Basics Variables
 run-name: ${{ github.actor }} Explaining Variables - Try Number ${{ github.run_number }}
 
+env:
+  KEY: value
+  MY_NAME: 'Mahmoud Anwar'  
+
 on: 
   workflow_dispatch
 
@@ -9,4 +13,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print Variables
-        run: echo "Hello World"
+        run: echo $MY_NAME
