@@ -1,0 +1,12 @@
+name: 06 Basics Variables
+run-name: ${{ github.actor }} Explaining Variables - Try Number ${{ github.run_number }}
+
+on: 
+  workflow_dispatch
+
+jobs:
+  print-variables:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Variables
+        run: echo "Hello World"
