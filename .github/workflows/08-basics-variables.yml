@@ -1,4 +1,4 @@
-name: 06 Basics Variables
+name: 08 Basics Variables
 run-name: ${{ github.actor }} Explaining Variables - Try Number ${{ github.run_number }}
 
 env:
