@@ -13,4 +13,5 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Print Variables
-        run: echo $MY_NAME
+        # run: echo $MY_NAME  //Linux
+        run: echo %MY_NAME%  
