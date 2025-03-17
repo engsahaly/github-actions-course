@@ -13,4 +13,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print Variables
-        run: echo $MY_NAME
+        # run: echo $MY_NAME
+        run: echo ${{ env.MY_NAME }}
