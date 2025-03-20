@@ -6,7 +6,10 @@ on:
 
 jobs:
   Build:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
     steps:
       - name: Build Project
-        run: echo "hello world"
+        run: echo "Build Project on Operating System (${{ matrix.os }})"
