@@ -1,0 +1,12 @@
+name: 13 Basics Matrix
+run-name: ${{ github.actor }} Explaining Matrix - Try Number ${{ github.run_number }}
+
+on: 
+  workflow_dispatch
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build Project
+        run: echo "hello world"
