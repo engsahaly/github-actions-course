@@ -10,6 +10,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest]
+        php_version: [8.2, 8.3, 8.4]
     steps:
       - name: Build Project
-        run: echo "Build Project on Operating System (${{ matrix.os }})"
+        run: echo "Build Project on Operating System (${{ matrix.os }}) with php version (${{ matrix.php_version }})"
