@@ -2,7 +2,7 @@ name: 11 Basics Expressions
 run-name: ${{ github.actor }} Explaining Expressions - Try Number ${{ github.run_number }}
 
 env: 
-  RUN_NUMBER: ${{ github.run_number == 1 }}
+  RUN_NUMBER: ${{ github.run_number > 1 && 'greater than 1' || 'less than 1' }}
 
 on: 
   workflow_dispatch
