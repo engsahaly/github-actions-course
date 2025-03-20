@@ -4,6 +4,9 @@ run-name: ${{ github.actor }} Explaining Permissions - Try Number ${{ github.run
 on: 
   workflow_dispatch
 
+permissions:
+  issues: write
+
 jobs:
   open-issue:
     runs-on: ubuntu-latest
