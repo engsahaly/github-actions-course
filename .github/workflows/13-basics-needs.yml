@@ -1,0 +1,24 @@
+name: 13 Basics Needs
+run-name: ${{ github.actor }} Explaining Needs - Try Number ${{ github.run_number }}
+
+on: 
+  workflow_dispatch
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build Project
+        run: exit 1
+
+  Test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test Project
+        run: echo "Test Project Dependency"
+
+  Deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy Project
+        run: echo "Deploy Project Dependency"
