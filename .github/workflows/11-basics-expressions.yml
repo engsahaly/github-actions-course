@@ -14,4 +14,9 @@ jobs:
     steps:
       - name: Print Hello World
         # run: echo ${{ env.RUN_NUMBER }}
+        # run: echo ${{ env.TESTING_VALUE }}
+        run: exit 1
+      
+      - name: Print Hello World 2
+        if: ${{ failure() }}
         run: echo ${{ env.TESTING_VALUE }}
