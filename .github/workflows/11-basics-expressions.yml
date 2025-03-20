@@ -2,7 +2,7 @@ name: 11 Basics Expressions
 run-name: ${{ github.actor }} Explaining Expressions - Try Number ${{ github.run_number }}
 
 env: 
-  RUN_NUMBER: ${{ github.run_number }}
+  RUN_NUMBER: ${{ github.run_number == 1 }}
 
 on: 
   workflow_dispatch
@@ -12,4 +12,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print Hello World
-        run: echo "Hello World"
+        run: echo ${{ env.RUN_NUMBER }}
