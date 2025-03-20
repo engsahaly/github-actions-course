@@ -6,7 +6,7 @@ on:
 
 jobs:
   Build:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, Windows, X64, runner1]
     steps:
       - name: Print Hello World
         run: echo "Hello World"
