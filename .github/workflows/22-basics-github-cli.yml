@@ -5,8 +5,10 @@ on:
   workflow_dispatch
 
 jobs:
-  hello-world-job:
+  open-new-issue-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Echo Hello World
-        run: echo "Hello World"
+      - name: Open New Issue
+        run: gh issue create --title "New Issue Feon Gitub Actions" --body "Nothing works"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
