@@ -7,6 +7,10 @@ on:
 jobs:
   php-version:
     runs-on: ubuntu-latest
+    
+    container:
+      image: php:7.2
+
     steps:
       - name: Check PHP Version
         run: php -v
