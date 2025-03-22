@@ -1,0 +1,12 @@
+name: 16 Basics Marketplace
+run-name: ${{ github.actor }} Explaining Marketplace - Try Number ${{ github.run_number }}
+
+on: 
+  workflow_dispatch
+
+jobs:
+  php-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check PHP Version
+        run: php -v
