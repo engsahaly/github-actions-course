@@ -1,0 +1,12 @@
+name: 22 Basics github cli
+run-name: ${{ github.actor }} Explaining github cli - Try Number ${{ github.run_number }}
+
+on: 
+  workflow_dispatch
+
+jobs:
+  hello-world-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo Hello World
+        run: echo "Hello World"
