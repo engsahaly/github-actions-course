@@ -8,5 +8,8 @@ jobs:
   hello-world-job:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout Code 
+        uses: actions/checkout@v4.2.2
+
       - name: Echo Hello World
         uses: ./.github/actions/print-hello-world
