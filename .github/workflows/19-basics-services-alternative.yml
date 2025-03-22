@@ -7,11 +7,6 @@ on:
 jobs:
   redis-job:
     runs-on: ubuntu-latest
-
-    services:
-      redis:
-        image: redis:latest
-
     steps:
       - name: Install redis CLI
         run: sudo apt-get install -y redis
