@@ -16,6 +16,7 @@ class ProfileController extends Controller
      */
     public function edit(Request $request): View
     {
+        // This is a bad modification
         return view('profile.edit', [
             'user' => $request->user(),
         ]);
