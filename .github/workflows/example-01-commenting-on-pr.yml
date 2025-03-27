@@ -10,9 +10,6 @@ jobs:
   comment-on-pr-job:
     runs-on: ubuntu-latest
     steps:
-      - name: print github context
-        run: echo ${{ toJson(github) }}
-
       - name: Checkout Code
         uses: actions/checkout@v4.2.2
 
@@ -20,4 +17,4 @@ jobs:
         run: gh pr comment $PR_NUMBER --body "We will not be merging you PR. Please update your code to satisfy our requirements and open a new PR."
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PR_NUMBER: 13
+          PR_NUMBER: ${{ github.event.pull_request.number }}
