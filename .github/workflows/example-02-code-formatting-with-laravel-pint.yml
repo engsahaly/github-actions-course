@@ -1,0 +1,33 @@
+name: Example 02 - Code Formatting with Laravel Pint
+run-name: Example 02 - Code Formatting with Laravel Pint
+
+on: 
+  push:
+    branches:
+      - master
+
+jobs:
+  run-pint-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4.2.2
+
+      # - name: install PHP & Composer
+      
+      - name: install laravel pint
+        run: composer require laravel/pint --dev
+      
+      - name: run pint
+        run: ./vendor/bin/pint
+      
+      - name: commit changes back
+        run: |
+          git add .
+          git commit -m "Run Pint"
+          git push 
+
+
+
+
+
