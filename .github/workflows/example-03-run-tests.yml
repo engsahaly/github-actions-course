@@ -23,6 +23,9 @@ jobs:
           php artisan key:generate
       
       - name: Run tests
+        env: 
+          DB_CONNECTION: 'sqlite'
+          DB_DATABASE: ':memory:'
         run: php artisan test --compact
 
 
