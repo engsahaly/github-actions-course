@@ -15,7 +15,9 @@ jobs:
       # - name: Install PHP & Composer (IF YOU WANT)
       
       - name: Enable MySQL
-        run: sudo systemctl start mysql.service
+        run: |
+          sudo systemctl start mysql.service
+          mysql -uroot -proot -e "CREATE DATABASE github_actions_course;"
 
       - name: Install project dependencies
         run: composer install -q
