@@ -2,8 +2,8 @@ name: Example 06 - run tests with coverage
 run-name: Example 06 - run tests with coverage
 
 on: 
-  # pull_request
-  workflow_dispatch
+  pull_request
+  # workflow_dispatch
 
 jobs:
   run-tests:
