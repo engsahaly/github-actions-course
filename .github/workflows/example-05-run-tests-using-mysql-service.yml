@@ -1,0 +1,41 @@
+name: Example 05 - run tests using mysql service
+run-name: Example 05 - run tests using mysql service
+
+on: 
+  # pull_request
+  workflow_dispatch
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+
+    services:
+      mysql:
+        image: mysql:latest
+        env:
+          MYSQL_DATABASE: github_actions_course
+          MYSQL_ALLOW_EMPTY_PASSWORD: yes
+        ports:
+          - 3306:3306
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4.2.2
+
+      # - name: Install PHP & Composer (IF YOU WANT)
+      
+      - name: Install project dependencies
+        run: composer install -q
+      
+      - name: Prepare project
+        run: |
+          cp .env.example .env
+          php artisan key:generate
+      
+      - name: Run tests
+        run: php artisan test
+
+
+
+
+
