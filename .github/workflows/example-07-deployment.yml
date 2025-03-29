@@ -2,7 +2,9 @@ name: Example 07 - Deployment
 run-name: Example 07 - Deployment
 
 on: 
-  workflow_dispatch
+  push:
+    branches:
+      - production
 
 jobs:
   run-tests:
