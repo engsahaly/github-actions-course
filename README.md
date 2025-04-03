@@ -1,7 +1,6 @@
 ## Mastering CI/CD with GitHub Actions: Automate, Test, Deploy Course Files on Udemy
 
 <img src="https://img-c.udemycdn.com/course/750x422/6546331_0e2b_2.jpg"> 
-https://img-c.udemycdn.com/course/750x422/6546331_0e2b_2.jpg
 
 **Created By :** Mahmoud Anwar
 **Email :** Engsahaly@gmail.com
